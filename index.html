@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="loginForm">
+        <img src="profile_photo_icon.jpg" alt="Profile Photo">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Log In</button>
+        <div id="errorMessage" class="error-message"></div>
+        <a href="#" id="forgotPassword">Forgot Password?</a>
+    </div>
+
+    <div class="container" id="todoApp" style="display: none;">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+        <div id="errorMessage" class="error-message"></div>
+        <button onclick="logout()">Log Out</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
